@@ -1,0 +1,25 @@
+{%  extends "base/base.html" %}
+
+{% block title %} Hashing App {%  endblock %}
+
+{% block content %}
+    <h1>Request Logs</h1>
+    <table>
+    <thead>
+    <tr>
+        <th>Timestamp</th>
+        <th>Query String</th>
+        <th>Hash</th>
+    </tr>
+    </thead>
+    <tbody>
+    {%  for request_log in request_log_list %}
+    <tr>
+        <td>{{ request_log.timestamp }}</td>
+        <td>{{ request_log.query }}</td>
+        <td>{{ request_log.hash }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+{% endblock %}

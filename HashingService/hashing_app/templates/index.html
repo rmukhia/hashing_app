@@ -1,0 +1,11 @@
+{%  extends "base/base.html" %}
+
+{% block title %} Hashing App {%  endblock %}
+
+{% block content %}
+    <h1>Enter Query String</h1>
+    <form action="{% url 'hash' %}" method="get">
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}
