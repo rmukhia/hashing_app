@@ -87,4 +87,4 @@ But here we see that its being stolen by a bot. We could integrate reCAPTCHA ser
 
 A combination of one time use refresh token, short-lived access token, rate limiting based on access token and reCAPTCHA would help us in securing our APIs to some degree. The APIs should be running over HTTPs.
 
-The steps mentioned above would make it very difficult for the bad actor to run scale and run their WebApp smoothly. But since the nature of our WebApp is public, it would be hard to stop them right in their tracks.
+The steps mentioned above would make it very difficult for the bad actor to scale and run their WebApp smoothly. But since the nature of our WebApp is public, it would be hard to stop them right in their tracks.
